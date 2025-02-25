@@ -47,3 +47,91 @@ GitHub is a **web-based platform** that hosts Git repositories, making it easy f
    ```sh
    git clone <repo_url>
    cd <repo_name>
+
+## 📌 Steps to Add a File to GitHub Using Git & VS Code  
+
+Follow these steps to add and upload a new file to your GitHub repository:
+
+### ✅ Step 1: Open Your Project in VS Code  
+- Open **VS Code** and navigate to your project folder.
+
+### ✅ Step 2: Create or Add a File  
+- Add a new file or modify an existing file in the project directory.
+
+### ✅ Step 3: Open Terminal in VS Code  
+- Open the **terminal** (`Ctrl + ~` on Windows/Linux or `Cmd + ~` on Mac).
+
+### ✅ Step 4: Check the Status of Your Repository  
+```sh
+git status
+```
+- This shows any new, modified, or deleted files.
+
+### ✅ Step 5: Add the File to Staging Area  
+```sh
+git add <filename>  # Adds a specific file
+git add .  # Adds all new and modified files
+```
+
+### ✅ Step 6: Commit the Changes  
+```sh
+git commit -m "Added <filename>"
+```
+- Write a meaningful commit message describing the change.
+
+### ✅ Step 7: Push the Changes to GitHub  
+```sh
+git push origin main
+```
+- If you're working on a different branch, replace `main` with your branch name.
+
+### ✅ Step 8: Verify on GitHub  
+- Go to your **GitHub repository** and check if the file is uploaded.
+
+---
+
+🚀 **Now your file is successfully added to GitHub!** 🎉
+
+---
+
+## 📌 Steps to Remove a File from GitHub Using Git & VS Code  
+
+Follow these steps to remove a file from your GitHub repository:
+
+### ✅ Step 1: Open Your Project in VS Code  
+- Open **VS Code** and navigate to your project folder.
+
+### ✅ Step 2: Open Terminal in VS Code  
+- Open the **terminal** (`Ctrl + ~` on Windows/Linux or `Cmd + ~` on Mac).
+
+### ✅ Step 3: Remove the File  
+```sh
+git rm <filename>
+```
+- This removes the file from your local repository.
+
+### ✅ Step 4: Check the Status of Your Repository  
+```sh
+git status
+```
+- Verify that the file is marked as deleted.
+
+### ✅ Step 5: Commit the Changes  
+```sh
+git commit -m "Removed <filename>"
+```
+- Write a meaningful commit message describing the removal.
+
+### ✅ Step 6: Push the Changes to GitHub  
+```sh
+git push origin main
+```
+- If you're working on a different branch, replace `main` with your branch name.
+
+### ✅ Step 7: Verify on GitHub  
+- Go to your **GitHub repository** and check if the file is removed.
+
+---
+
+🚀 **Now your file is successfully removed from GitHub!** 🗑️
+
