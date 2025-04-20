@@ -47,6 +47,40 @@ GitHub is a **web-based platform** that hosts Git repositories, making it easy f
    ```sh
    git clone <repo_url>
    cd <repo_name>
+   ```
+
+---
+
+## 📌 Create a GitHub Repository Using Terminal
+
+Follow these steps to create and push a new GitHub repo using terminal:
+
+### ✅ Step 1: Create a New Directory and Initialize Git
+```sh
+mkdir <project_name>
+cd <project_name>
+git init
+```
+
+### ✅ Step 2: Create Files and Make Initial Commit
+```sh
+echo "# Project Title" > README.md
+git add .
+git commit -m "Initial commit"
+```
+
+### ✅ Step 3: Create a Repository on GitHub
+- Go to [GitHub](https://github.com) → New Repository → Enter name → Click **Create Repository**
+- DO NOT initialize with README, .gitignore, or license.
+
+### ✅ Step 4: Link Local Repo to GitHub Remote and Push
+```sh
+git remote add origin https://github.com/<your_username>/<repo_name>.git
+git branch -M main
+git push -u origin main
+```
+
+---
 
 ## 📌 Steps to Add a File to GitHub Using Git & VS Code  
 
@@ -133,5 +167,4 @@ git push origin main
 
 ---
 
-🚀 **Now your file is successfully removed from GitHub!** 🗑️
-
+🚀 **Now your file is successfully removed from GitHub!** 🚗️
